@@ -1,0 +1,23 @@
+[
+  {
+    "id": 0,
+    "imageUrl": "https://www.reidys.com/images/squier-bullet-strat-hss-hardtail-black-p3682-803_zoom.jpg",
+    "title": "Squier Bullet Stratocaster HT HSS black",
+    "price": 19700,
+    "category": 1
+  },
+  {
+    "id": 1,
+    "imageUrl": "https://ibanez.ru/upload/iblock/7cd/A073974_e3q39hh7rugwww4s0ggo0gscs.jpg",
+    "title": "IBANEZ GRG131DX-BKF",
+    "price": 25000,
+    "category": 1
+  },
+  {
+      "id": 2,
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/5207288/img_id5696181153121936399.jpeg/orig",
+      "title": "SCHECTER DEMON-7 FR CRB",
+      "price": 49990,
+      "category": 2
+    }
+]
