@@ -14,10 +14,47 @@
     "category": 1
   },
   {
-      "id": 2,
-      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/5207288/img_id5696181153121936399.jpeg/orig",
-      "title": "SCHECTER DEMON-7 FR CRB",
-      "price": 49990,
-      "category": 2
-    }
+    "id": 2,
+    "imageUrl": "https://avatars.mds.yandex.net/get-mpic/5207288/img_id5696181153121936399.jpeg/orig",
+    "title": "SCHECTER DEMON-7 FR CRB",
+    "price": 49990,
+    "category": 2
+  },
+  {
+    "id": 3,
+    "imageUrl": "https://avatars.mds.yandex.net/get-mpic/1724439/img_id2908967175137896329.jpeg/orig",
+    "title": "KX Series Cort KX508MS-II-MBB",
+    "price": 75000,
+    "category": 3
+  },
+  {
+    "id": 4,
+    "imageUrl": "https://avatars.mds.yandex.net/get-goods_pic/7544892/pic97496509bd661540bcdf76a94eeb9ac9/orig",
+    "title": "ESP LTD MH-207BLKS",
+    "price": 49730,
+    "category": 2
+  },
+  {
+    "id": 5,
+    "imageUrl": "https://pop-music.ru/upload/iblock/bc0/bc0e9af2ea44b5bcef2584888d466b02.png",
+    "title": "Schecter Demon-7 ABSN",
+    "price": 49000,
+    "category": 2
+  },
+  {
+    "id": 6,
+    "imageUrl": "https://avatars.mds.yandex.net/get-mpic/4904013/img_id274292557808988835.jpeg/orig",
+    "title": "Yamaha F310",
+    "price": 17500,
+    "category": 4
+  },
+  {
+    "id": 7,
+    "imageUrl": "https://avatars.mds.yandex.net/get-mpic/4544006/img_id3527619859900037312.jpeg/orig",
+    "title": "YAMAHA C40",
+    "price": 16600,
+    "category": 5
+  }
 ]
+
+//https://641d9857945125fff3d1165b.mockapi.io/items

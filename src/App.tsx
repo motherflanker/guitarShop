@@ -5,6 +5,7 @@ import Header from './components/Header'
 import './scss/app.scss';
 import Categories from "./components/Categories";
 import Sort from "./components/Sort";
+import {Skeleton} from "./components/GuitarCard/Skeleton";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Categories value={1} onChangeCategory={idx => 1}/>
             <Sort/>
           </div>
+          <Skeleton/>
         </div>
       </div>
     </div>
