@@ -32,7 +32,7 @@ export const GuitarCard: React.FC<GuitarCardProps> = ({id, title, imageUrl, pric
         <div className="guitar-card-wrapper">
             <div className="guitar-card">
                 <Link key={id} to={`/guitar/${id}`}>
-                    <img className="guitar-card__image" src={imageUrl} alt="Pizza" />
+                    <img className="guitar-card__image" src={imageUrl} alt="Guitar" />
                     <h4 className="guitar-card__title">{title}</h4>
                 </Link>
                 <div className="guitar-card__bottom">
