@@ -5,7 +5,7 @@ import styles from "./Search.module.scss";
 import {debounce} from "lodash";
 import {setSearchValue} from "../../redux/filter/slice";
 
-const Search: React.FC = () => {
+export const Search: React.FC = () => {
   const dispatch = useDispatch();
   const inputRef = useRef<HTMLInputElement>(null);
   const [value, setValue] = useState<string>("");

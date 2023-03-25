@@ -20,7 +20,7 @@ const Guitar: React.FC = () => {
         setGuitar(data);
       } catch (error) {
         alert("Error while fetching...");
-        navigate("/");
+        navigate('/');
       }
     }
     fetchGuitar();
