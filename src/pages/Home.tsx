@@ -52,7 +52,7 @@ const Home: React.FC = () => {
   };
 
   useEffect(() => {
-    if (isMounted.current) {
+    /*if (isMounted.current) {
       const params = {
         categoryId: categoryId > 0 ? categoryId : null,
         sortProperty: sort.sortProperty,
@@ -60,7 +60,7 @@ const Home: React.FC = () => {
       };
       const queryString = qs.stringify(params, { skipNulls: true });
       navigate(`/?${queryString}`);
-    }
+    }*/
     getGuitars();
   }, [categoryId, currentPage, searchValue, sort.sortProperty]);
 
