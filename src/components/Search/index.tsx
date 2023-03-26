@@ -1,9 +1,9 @@
-import React, {ChangeEvent, useCallback, useRef, useState} from "react";
+import React, { ChangeEvent, useCallback, useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 
 import styles from "./Search.module.scss";
-import {debounce} from "lodash";
-import {setSearchValue} from "../../redux/filter/slice";
+import { debounce } from "lodash";
+import { setSearchValue } from "../../redux/filter/slice";
 
 export const Search: React.FC = () => {
   const dispatch = useDispatch();
@@ -11,21 +11,22 @@ export const Search: React.FC = () => {
   const [value, setValue] = useState<string>("");
 
   const updateSearchValue = useCallback(
-      debounce((str: string) =>{
-          dispatch(setSearchValue(str))
-      }, 150), []
-  )
+    debounce((str: string) => {
+      dispatch(setSearchValue(str));
+    }, 150),
+    []
+  );
 
   const onChangeInput = (e: ChangeEvent<HTMLInputElement>) => {
-      setValue(e.target.value)
-      updateSearchValue(e.target.value)
-  }
+    setValue(e.target.value);
+    updateSearchValue(e.target.value);
+  };
 
   const onClickClear = () => {
-      dispatch(setSearchValue(''))
-      setValue('')
-      inputRef.current?.focus()
-  }
+    dispatch(setSearchValue(""));
+    setValue("");
+    inputRef.current?.focus();
+  };
 
   return (
     <div className={styles.root}>
@@ -70,17 +71,16 @@ export const Search: React.FC = () => {
         className={styles.input}
         placeholder="Search..."
       />
-        {
-            value && (
-                <svg
-                    onClick={onClickClear}
-                    className={styles.clearIcon}
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
-                </svg>
-            )
-        }
+      {value && (
+        <svg
+          onClick={onClickClear}
+          className={styles.clearIcon}
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
+        </svg>
+      )}
     </div>
   );
 };

@@ -1,6 +1,5 @@
-import { FilterSliceState, Sort, SortPropertyEnum } from "./types";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-
+import { FilterSliceState, Sort, SortPropertyEnum } from "./types";
 
 const initialState: FilterSliceState = {
   searchValue: "",
@@ -47,10 +46,10 @@ const filterSlice = createSlice({
 
 export const {
   setCategoryId,
-  setSearchValue,
   setSort,
   setCurrentPage,
   setFilters,
+  setSearchValue,
 } = filterSlice.actions;
 
-export default filterSlice.reducer
+export default filterSlice.reducer;
