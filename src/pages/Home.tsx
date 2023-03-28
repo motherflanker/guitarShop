@@ -74,7 +74,7 @@ const Home: React.FC = () => {
   }, []);
 
   const guitars = items.map((obj: any) => <GuitarCard key={obj.id} {...obj} />);
-  const skeletons = [...new Array(8)].map((_, index) => (
+  const skeletons = [...new Array(4)].map((_, index) => (
     <Skeleton key={index} />
   ));
 
