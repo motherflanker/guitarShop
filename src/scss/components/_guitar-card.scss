@@ -16,14 +16,17 @@
   }
 
   &__image {
-    width: 260px;
+    max-width: 350px;
+    max-height: 350px;
+    width: auto;
+    height: auto;
   }
 
   &__title {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 900;
-    letter-spacing: 1%;
     margin-bottom: 20px;
+    height: 48px;
   }
 
   &__selector {

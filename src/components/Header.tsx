@@ -32,7 +32,7 @@ const Header: React.FC = () => {
             <img width="74" height="52" src={logo} alt="guitar logo" />
             <div>
               <h1>GuitarShop</h1>
-              <p>гитары на любой вкус и цвет</p>
+              <p>Couldn't you come up with a better slogan?</p>
             </div>
           </div>
         </Link>

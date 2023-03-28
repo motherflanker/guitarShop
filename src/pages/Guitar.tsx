@@ -14,8 +14,9 @@ const Guitar: React.FC = () => {
   useEffect(() => {
     async function fetchGuitar() {
       try {
+        //Эта фича платная на mockAPI, но код рабочий ребята я клянусь
         const { data } = await axios.get(
-          "https://641d9857945125fff3d1165b.mockapi.io/items" + id
+          `https://641d9857945125fff3d1165b.mockapi.io/items` + id
         );
         setGuitar(data);
       } catch (error) {
